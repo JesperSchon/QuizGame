@@ -38,6 +38,30 @@ const questions = [
     correctAnswer: 1
   },
   {
+    image: "images/lamm.jpg",
+    question: "Vilket djur blev Stella biten av på Gotlands djurpark när hon var liten?",
+    answers: ["En häst", "En kanin", "Ett lamm", "En känguru"],
+    correctAnswer: 0
+  },
+  {
+    image: "images/preggo.jpg",
+    question: "Vilken månad på året fick vi reda på att jag var gravid med Rio?",
+    answers: ["Mars", "April", "Maj", "Juni"],
+    correctAnswer: 2
+  },
+  {
+    image: "images/image11.jpg",
+    question: "Vilket är ett av mina bästa minnen från vårt förhållande?",
+    answers: ["När vi bodde på hotell i Stockholm", "Första gången jag kom till Gotland", "Kvällsbad med barnen på sommaren", "En sommarkväll innan barnen när vi cyklade runt hela Klinte"],
+    correctAnswer: 3
+  },
+  {
+    image: "images/image13",
+    question: "Hur många fingrar har vi tillsammans i vår familj?",
+    answers: ["Ingen aning", "Varför undrar du?", "42", "1022"],
+    correctAnswer: 1
+  },
+  {
     image: "images/image9.jpeg",
     question: "Mathias vill du gifta dig med mig?",
     answers: ["JA", "-", "-", "-"],
@@ -90,6 +114,7 @@ function showResults() {
       loadQuestion();
     } else {
       if (isFinalQuestion && answer === correctAnswer) {
+        alert(`Your score: ${score}/${questions.length}`)
         window.location.href = "winscreen.html"; // Redirect to another page
       } else {
         alert(`Quiz completed! Your score: ${score}/${questions.length}`);
