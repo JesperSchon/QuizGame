@@ -56,7 +56,7 @@ const questions = [
     correctAnswer: 3
   },
   {
-    image: "images/image13",
+    image: "images/image13.jpg",
     question: "Hur många fingrar har vi tillsammans i vår familj?",
     answers: ["Ingen aning", "Varför undrar du?", "42", "1022"],
     correctAnswer: 1
